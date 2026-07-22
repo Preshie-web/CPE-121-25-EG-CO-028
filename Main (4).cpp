@@ -1,16 +1,30 @@
 #include <iostream>
+#include <iomanip>
+#include <string>
 using namespace std;
 
 int main() 
 {
-    cout << "Name: Monday Precious Okoro" << endl;
-    cout << "Matriculation Number: 25/EG/CO/028" << endl;
-    cout << "Department: Computer Engineering" << endl;
-    cout << "**********" << endl;
-    cout << "**********" << endl;
-    cout << "**********" << endl;
-    cout << "**********" << endl;
-    cout << "**********" << endl;
-    cout << "Academic Session: 2025/2026" << endl;
+    string name;
+    int score1, score2, score3;
+    float average;
+
+    cout << "PEACE MBOk" << endl;
+    cin >> name;
+
+    cout << "50" << endl;
+    cin >> score1;
+
+    cout << "34" << endl;
+    cin >> score2;
+
+    cout << "20" << endl;
+    cin >> score3;
+
+    average = (score1 + score2 + score3) / 3.0;
+
+    cout << fixed << setprecision(2);
+    cout << "Students name: " << name << endl;
+    cout << "Average score: " << average << endl; 
     return 0;
 }
